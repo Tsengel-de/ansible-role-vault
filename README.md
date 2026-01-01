@@ -143,7 +143,7 @@ It initializes and unseals Vault. It also enable KV version 2 at `secret` path a
     key_type: RSA
     country_name: ES
     email_address: admin@tsengel.de
-    organization_name: Ricsanfre
+    organization_name: Tsengel
     ansible_user: root
 
   pre_tasks:
@@ -167,7 +167,7 @@ It initializes and unseals Vault. It also enable KV version 2 at `secret` path a
         vault_ca: "{{ lookup('file', 'certificates/CA.pem') }}"
 
   roles:
-    - role: ricsanfre.vault
+    - role: tsengel.vault
       vault_enable_tls: true
       custom_ca: true
       vault_init: true
@@ -209,7 +209,7 @@ Where `generate_custom_ca.yml` contain the tasks for generating a custom CA:
 - name: create the CA CSR
   openssl_csr:
     privatekey_path: certificates/CA.key
-    common_name: Ricsanfre CA
+    common_name: Tsengel CA
     use_common_name_for_san: false  # since we do not specify SANs, don't use CN as a SAN
     basic_constraints:
       - 'CA:TRUE'
@@ -270,7 +270,7 @@ MIT
 Author Information
 ------------------
 
-Created by Ricardo Sanchez (ricsanfre)
+Created by Tsengel (tsengel)
 
 
 ## Author Information

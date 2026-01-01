@@ -9,7 +9,7 @@
     key_type: RSA
     country_name: ES
     email_address: admin@com
-    organization_name: Ricsanfre
+    organization_name: Tsengel
     ansible_user: root
 
   pre_tasks:
