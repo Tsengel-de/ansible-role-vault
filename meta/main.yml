@@ -1,16 +1,15 @@
 galaxy_info:
-  role_name: vault
-  author: Tsengel-de
+  author: tsengel-de
+  namespace: tsengel-de
   description: Vault hashicorp installation and configuration role
   license: MIT
   min_ansible_version: '2.9'
   platforms:
-  - name: Ubuntu
-    versions:
-    - focal
+    - name: Ubuntu
+      versions:
+        - focal
   galaxy_tags:
-  - system
-  - vault
-  - secrets
-  namespace: Tsengel-de
+    - system
+    - vault
+    - secrets
 dependencies: []
