@@ -138,11 +138,11 @@ It initializes and unseals Vault. It also enable KV version 2 at `secret` path a
   become: true
   gather_facts: true
   vars:
-    server_hostname: vault.ricsanfre.com
+    server_hostname: vault.tsengel.de
     ssl_key_size: 4096
     key_type: RSA
     country_name: ES
-    email_address: admin@ricsanfre.com
+    email_address: admin@tsengel.de
     organization_name: Ricsanfre
     ansible_user: root
 
@@ -271,3 +271,8 @@ Author Information
 ------------------
 
 Created by Ricardo Sanchez (ricsanfre)
+
+
+## Author Information
+
+Email: tsengel.de@gmail.com
